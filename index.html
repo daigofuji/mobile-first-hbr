@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rebuilding Mobile Friendly Harvard Business Review</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://hbr.org/resources/css/hbr-fonts.css);
+      @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+      @import url(//fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { 
+        font-family: 'National'; 
+        font-weight: 400;
+        line-height: 1.1;
+      }
+      .bold, strong {
+       font-weight: 900;
+      }
+      h1, h2, h3 {
+        font-family: 'National';
+        font-weight: 200;
+      }
+      img {
+        max-width: 100%;
+        max-height: 500px;
+      }
+      .inverse {
+        background: #000;
+        color: #999;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #fff;
+        line-height: 0.8em;
+      }
+      .remark-code, .remark-inline-code { 
+        font-family: 'Ubuntu Mono'; 
+      }
+      .remark-slide-content {
+        font-size:40px;
+        padding: 1em 2em;
+      }
+      .remark-slide-content.big-img {
+        padding:15px;
+      }
+      .remark-slide-content.big-img p{
+        margin: 0;
+      }
+      .remark-slide-content.big-img img{
+        max-height:1000px;
+      }
+      .remark-slide-content.smaller-text li{
+        font-size:35px;
+      }
+      .remark-slide-content h1 {
+        font-size:80px;
+        line-height: 1.1;
+      }
+      .remark-slide-content h2 {
+        font-size:70px;
+        line-height: 1.1;
+      }
+      .remark-slide-content h3 {
+        font-size:45px;
+        line-height: 1.1;
+      }
+      .light {
+        font-weight: 200;
+      }
+      .remark-code {
+        font-size:30px;
+      }
+      .remark-slide-number {
+         font-size:18px;
+      }
+      .small {
+        font-size:20px;
+        line-height: 1.2;
+      }
+      .credit {
+        font-size:16px;
+        color: gray;
+      }
+      .img-200 {
+        width: 200px;
+      }
+      a {
+        color: #ee0084;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# **Rebuilding hbr.org**
+
+.small[WGBH | July 21, 2015]
+
+by Daigo Fujiwara, Marta Kusztra, Laura Guillen 
+
+![img](img/hbr_logo.svg)
+
+---
+class: center, middle, inverse
+
+# Harvard Business Review
+
+---
+
+
+class: center, middle
+
+# Print Magazine
+
+---
+class: center, middle
+
+### First issue (1923)
+
+![img](img/hbr_vol1.png)
+
+
+---
+class: center, middle, big-img
+
+### ...and today
+
+![img](img/hbr_2014.png)
+
+---
+class: center, middle, inverse
+
+# Web
+
+---
+class: center, middle
+
+## Old site (Originally designed May 2010)
+
+We also had separate mobile site
+
+---
+class: center, middle, big-img 
+
+![img](img/old-site.png)
+
+---
+class: center, middle
+
+# Redesign was launched on November 10, 2014
+
+---
+class: center, middle, big-img 
+
+![img](img/am-i-responsive.png)
+
+---
+class: middle, center
+
+## Technology has changed
+
+
+---
+class: center, middle, big-img 
+
+![img](img/devices.jpg)
+
+.credit[https://www.flickr.com/photos/zeldman/9609702980/]
+---
+class: center, middle, big-img 
+
+![img](img/apple-old-imac-vs-iphone-540x540.jpg)
+
+
+
+---
+class: middle, center
+
+# Reader habits have changed 
+
+---
+class: center, middle, big-img 
+
+![img](img/habits1.png)
+
+---
+class: center, middle, big-img 
+
+![img](img/habits2.png)
+
+---
+class: middle, center
+
+HBR traffic: June 2013
+
+Desktop **71%** Mobile **21%** Tablet **8%**
+
+June 2014
+
+Desktop **61%** Mobile **30%** Tablet **9%**
+
+June 2015
+
+Desktop **56%** Mobile **37%** Tablet **7%**
+
+.small[Sourcce: HBR.org front end team analysis of Google Analytics]
+---
+class: center, middle, big-img 
+
+![img](img/consumption.png)
+
+---
+class: middle, center
+
+## Ideas are timeless for our audience
+More people have access to our content
+
+
+---
+class: center, middle, big-img 
+
+![img](img/executives.png)
+
+
+---
+class: middle, center
+
+# Shifting to a <br>**user-centric** <br>experience
+Regardless of how they got there
+
+---
+class: center, middle, big-img
+[![img](img/homepage.png)](https://hbr.org/)
+
+---
+class: center, middle, big-img
+[![img](img/my-library.png)](https://hbr.org/my-library)
+
+---
+class: middle, center
+
+# Mobile Friendly website 
+
+---
+class: center, middle
+
+## Premium Mobile Experience?
+
+
+---
+class: middle
+
+* Easy to navigate 
+* Easy to share
+* Clear, Simple, Beautiful, Useful
+* Fast loading
+* Engaging interactives
+
+---
+class: middle
+
+## Metrics: 
+* Increase in sharing
+* Increase in repeat visits
+* increase in page views
+* increase in mobile sessions
+
+---
+class:  middle
+
+### You have been hearing...
+* Multi-platform site
+* Mobile experience
+* Tablets
+* ... **all your devices**
+
+---
+class: center, middle, inverse
+
+# Responsive Web Design
+
+---
+class: center, middle
+
+## Not a new idea
+
+---
+class: center, middle
+
+# It’s Easy... 
+```css
+    @media (min-width:500px) { ... }
+```
+
+---
+class: center, middle
+
+# ...or is it?
+
+---
+class: center, middle
+
+## Web content fills a variety of containers.
+
+---
+class: center, middle, big-img
+![img](img/container.png)
+
+---
+class: center, middle
+
+# **EMBRACE THE FLUIDITY OF THE WEB!**
+
+Instead of page-based designs, we need **design systems**.
+---
+class: center, middle, inverse
+
+# Atomic Web Design
+
+---
+class: middle, center
+### **Atomic Web Design**
+[http://patternlab.io/about.html](http://patternlab.io/about.html)
+
+![img](img/atomic-web-design.gif)
+
+Created by **Brad Frost**, the creator of [this is responsive](http://bradfrost.github.io/this-is-responsive/) pattern library and [Mobile Web Best Practice](http://mobilewebbestpractices.com/)
+
+---
+class: middle
+
+![img](img/atomic-web-design.gif)
+
+**Atoms** on the Web are HTML elements like: h1, p, div, button, etc. More abstract atoms include colors and fonts. 
+
+Combining atoms, you get **molecules**, molecules create **organisms**.
+
+---
+class: middle
+
+![img](img/atomic-web-design.gif)
+
+## Each of them is **on its own, responsive**. 
+
+---
+class: middle
+
+![img](img/atomic-web-design.gif)
+
+Think of molecules and organisms as **Lego-like building blocks** designed to be combined together.
+
+Combined, they become **templates**, and ultimately **pages**. 
+
+---
+class: center, middle
+## Every reusable components on our website is now created with **“mobile first”** in mind. 
+
+---
+class: center, middle, inverse
+
+# Pattern Lab
+---
+class: center, middle
+
+### Pattern Lab is an open source tool to help you create atomic design systems.
+![img](img/pattern-lab.png)
+**[http://patternlab.io/](http://patternlab.io/)**
+
+Also created by Brad Frost, maintained by Dave Olsen on [github](https://github.com/pattern-lab/patternlab-php)
+
+---
+class: middle
+## What did Pattern-Lab give us?
+
+- Visual library of building blocks
+- View-port resizer and tester
+- Annotation and Code viewer
+
+---
+class: center, middle
+## Tool to create your site’s “living” **front-end style guide**
+---
+class: center, middle, inverse
+
+# Front end Style Guide
+
+---
+class: middle
+
+### A browser-based web front-end style guide, an interface inventory, or pattern library, can help us with:
+* Design Consistency
+* Code Standards (i.e. html structure, css class names)
+* Responsive Web Design
+
+---
+class: middle
+
+### Benefits of a front-end style guide
+
+* Being able to test responsive design ("Where does this design break?")
+* Improved workflow (Feedback / collaboration "Designing/deciding in the browser.")
+* Shared vocabulary (Design/Tech/Edit "What do you call this building block?")
+* Future reference ("What's available? What needs to be designed/coded next?")
+
+.small[Adapted from [Front-end Style Guides](http://24ways.org/2011/front-end-style-guides/) by Anna Debenham]
+
+---
+class: middle
+
+## Examples of front-end style guide
+* [StyleGuides.io](http://styleguides.io/)
+* [BBC](http://www.bbc.co.uk/gel)
+* [Starbucks](http://www.starbucks.com/static/reference/styleguide/)
+* [Yelp](http://www.yelp.com/styleguide)
+* [styleguides.io](http://styleguides.io/)
+* [Debenham's style guide collection](https://gimmebar.com/collection/4ecd439c2f0aaad734000022/front-end-styleguides-and-pattern-libraries)
+
+---
+class: middle
+
+### Challenges of styleguides
+* Time consuming to create
+* Seen only as a designer/developer tool
+* Often too abstract
+* Often too incomplete and/or out-of-date
+
+---
+class: center, middle
+
+# Bonus
+Google’s [“mobile-freindly” sites](http://googlewebmastercentral.blogspot.com/2014/11/helping-users-find-mobile-friendly-pages.html)
+
+<em>...we’re adding a “mobile-friendly” label to our mobile search results.</em>
+
+---
+class: center, middle, inverse
+
+#Design
+
+---
+class: center, middle, big-img
+![img](img/design.png)
+<!--
+* Refined Typography
+* Organized, uncongested layouts
+* Beautiful art on large and small screens
+* Interactived designed mobile-first
+* Charts designed mobile-first
+* Performance
+* Social media firendly visuals
+-->
+
+---
+class: center, middle, big-img, inverse
+[![img](img/design1.png)](https://hbr.org/2015/04/were-all-terrible-at-understanding-each-other)
+<!-- We’re All Terrible at Understanding Each Other
+by Heidi Grant Halvorson
+APRIL 16, 2015 -->
+---
+class: center, middle, big-img, inverse
+[![img](img/design2.png)](https://hbr.org/2015/05/the-3-d-printing-revolution)
+<!-- Customized art for degital:
+https://hbr.org/2015/05/the-3-d-printing-revolution
+The 3-D Printing Revolution
+by Richard D’Aveni
+FROM THE MAY 2015 ISSUE -->
+
+
+---
+class: center, middle, big-img, inverse
+[![img](img/design3.png)](https://hbr.org/2015/04/the-best-presentations-are-tailored-to-the-audience)
+<!-- Digital only art:
+https://hbr.org/2015/04/the-best-presentations-are-tailored-to-the-audience?
+The Best Presentations Are Tailored to the Audience
+by Harvard Business Review Staff
+APRIL 17, 2015 -->
+
+
+---
+class: center, middle, big-img, inverse
+[![img](img/design4.png)](https://hbr.org/2015/04/survey-how-does-late-night-emailing-affect-you)
+<!-- https://hbr.org/2015/04/survey-how-does-late-night-emailing-affect-you
+Survey: How Does Late-Night Emailing Affect You?
+
+by Nicole Torres
+APRIL 17, 2015
+-->
+
+---
+class: center, middle, big-img, inverse
+![img](img/design5.png)
+
+
+---
+class: center, middle, big-img, inverse
+![img](img/design7.png)
+
+
+---
+class: center, middle, big-img, inverse
+[![img](img/design8.png)](https://hbr.org/2015/05/leadership-across-cultures)
+<!-- Interactives:
+https://hbr.org/2015/05/leadership-across-cultures
+
+Leadership Across Cultures
+FROM THE MAY 2015 ISSUE
+-->
+
+
+---
+class: center, middle, big-img, inverse
+[![img](img/design9.png)](https://hbr.org/2015/04/the-world-of-business-16th-century-style-2)
+
+<!-- Interactives:
+https://hbr.org/2015/04/the-world-of-business-16th-century-style-2
+The World of Business, 16th-Century Style
+FROM THE APRIL 2015 ISSUE -->
+
+
+
+---
+class: center, middle, big-img, inverse
+[![img](img/design10.png)](https://hbr.org/2014/12/vision-statement-how-to-lie-with-charts)
+
+
+<!-- Interactives
+https://hbr.org/2014/12/vision-statement-how-to-lie-with-charts
+Vision Statement: How to Lie with Charts
+FROM THE DECEMBER 2014 ISSUE -->
+
+
+
+
+
+---
+class: center, middle, big-img, inverse
+[![img](img/design11.png)](https://hbr.org/2014/11/the-best-performing-ceos-in-the-world)
+<!-- Interactives
+https://hbr.org/2014/11/the-best-performing-ceos-in-the-world
+The Best-Performing CEOs in the World -->
+
+
+---
+class: center, middle, big-img, inverse
+[![img](img/vl1.png)](https://hbr.org/visual-library/2013/03/optimizing-advertising)
+<!-- Visual Library
+https://hbr.org/visual-library/2013/03/optimizing-advertising -->
+---
+class: center, middle, big-img, inverse
+[![img](img/vl2.png)](https://hbr.org/visual-library/1995/01/disruptive-innovation)
+<!-- Visual Library
+https://hbr.org/visual-library/1995/01/disruptive-innovation
+Disruptive Innovation -->
+
+---
+class: center, middle, big-img, inverse
+[![img](img/chart1.png)](https://hbr.org/2015/05/customer-data-designing-for-transparency-and-trust)
+<!--Charts:
+https://hbr.org/2015/05/customer-data-designing-for-transparency-and-trust -->
+
+
+---
+class: center, middle, big-img, inverse
+[![img](img/chart2.png)](https://hbr.org/2015/03/vision-statement-stuff-when-less-is-more)
+<!-- Infgraphics:
+https://hbr.org/2015/03/vision-statement-stuff-when-less-is-more
+Stuff: When Less Is More -->
+
+---
+class: center, middle, inverse
+
+#Viral!
+
+---
+class: center, middle, big-img, inverse
+![img](img/viral.png)
+
+
+---
+class: center, middle, big-img 
+
+![img](img/social.png)
+---
+class: center, middle, big-img 
+
+![img](img/social-mobile.png)
+
+
+
+---
+class: middle
+
+# What’s next?
+
+* Improve Personalized experience - My Library upgrade
+* Update Style Guide/Pattern library to reflect mobile Priority, then publish for the world to see
+* Simplified Layouts
+* More Interactives
+* Snowfall
+* C.O.P.E.
+
+---
+class: center, middle
+
+# Collaboration 
+
+Between Tech, Design, UX, Edit
+
+---
+class: center, middle, inverse
+
+# Technology problem
+
+---
+class: center, middle
+
+# GEEK ALERT!
+![img](img/nerds.png)
+
+---
+class: center, middle
+
+# Setting up tools 
+
+Pattern Lab, PHP, SASS, Ruby, Compass, Grunt, NodeJS, Foundation, Bower...
+
+---
+class: center, middle, big-img 
+![img](img/lots-of-stuff.png)
+
+---
+class: center, middle
+
+# Solution: 
+# Box it up in a<br>**Virtual Machine**
+
+---
+class: middle, center
+
+###We created a tool for **you** to start using Atomic Web Design...
+#...introducing [**daisy**](https://github.com/HBRGTech/daisy).
+
+**bit.ly/hbrdaisy**
+
+---
+class: middle, center
+
+# **Thank you!**
+
+[**bit.ly/hbrdaisy**](https://bit.ly/hbrdaisy)
+
+[Download and try daisy](https://github.com/HBRGTech/daisy), let us know what you think!
+@DaigoFuji
+
+![img](img/hbr_logo.svg)
+
+    </textarea>
+    <script src="//gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
